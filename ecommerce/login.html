@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('burger1.jpg'); /* Add your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .login-container {
+            background-color: rgba(60, 8, 8, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(225, 220, 220, 0.2);
+            width: 350px;
+        }
+        .login-container .log{
+            justify-content: center;
+            color: aliceblue;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: calc(100% - 22px);
+            padding: 10px 10px 10px 35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #ebe4dd;
+        }
+
+        .login-button {
+            background-color: #c0392b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .login-button:hover {
+            background-color: #e74c3c;
+        }
+
+        .signup-message {
+            text-align: center;
+            margin-top: 2dvh;
+        }
+
+        .signup {
+            background-color: #c0392b;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            
+        }
+
+        .signup:hover {
+            background-color: #e74c3c;
+        }
+        .signup-message .signup a{
+            color: white;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="log">Login</h2>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required>
+            <i class="user-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required>
+            <i class="email-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+            <i class="password-icon"></i>
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <button class="login-button">Login</button>
+        
+        <div class="signup-message">
+            <p>Don't have an account?</p>
+            <button class="signup"><a href="signup.html">Signup</a></button>
+        </div>
+    </div>
+</body>
+</html>
