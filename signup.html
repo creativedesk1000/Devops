@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('burger1.jpg'); /* Add your background image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .signup-container {
+            background-color: rgba(175, 13, 13, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .input-group input {
+            width: calc(100% - 22px);
+            padding: 10px 10px 10px 35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        /* Icons */
+        .input-group input[type="text"] + i {
+            content: '\1F464'; /* User icon */
+        }
+        .input-group input[type="tel"] + i {
+            content: '\1F4DE'; /* Phone icon */
+        }
+        .input-group input[type="email"] + i {
+            content: '\2709'; /* Envelope icon */
+        }
+        .input-group input[type="password"] + i {
+            content: '\1F512'; /* Lock icon */
+        }
+
+        .gender-group {
+            margin: 15px 0;
+        }
+
+        .gender-group label {
+            margin-right: 20px;
+            color: #ccc;
+        }
+
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+
+        .signup-button {
+            background-color: #c0392b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .signup-button:hover {
+            background-color: #e74c3c;
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .social-login a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <div class="input-group">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <i class="user-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="tel" id="contact" placeholder="Contact Number" required>
+            <i class="phone-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required>
+            <i class="email-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="text" id="address" placeholder="Address" required>
+            <i class="address-icon"></i>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+            <i class="password-icon"></i>
+        </div>
+        
+        <div class="gender-group">
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <button class="signup-button">Signup</button>
+        
+        <div class="social-login">
+            <p>Or signup with:</p>
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+</body>
+</html>
